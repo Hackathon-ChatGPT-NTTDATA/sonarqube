@@ -18,14 +18,7 @@ services:
       - sonarqube_dataa:/opt/sonarqube/data
       - sonarqube_extensionss:/opt/sonarqube/extensions
       - sonarqube_bundled-pluginss:/opt/sonarqube/lib/bundled-plugins
-    deploy:
-      resources:
-        limits:
-          cpus: '0.001'
-          memory: 500M
-        reservations:
-          cpus: '0.0001'
-          memory: 200M
+    
 
   db:
     image: postgres
